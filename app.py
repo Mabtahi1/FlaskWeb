@@ -1,23 +1,17 @@
 """
-This script runs the application using a development server.
-It contains the definition of routes and views for the application.
+Prolexis Analytics - Flask Web Application
 """
 from datetime import datetime
-from re import A
-from flask import render_template,url_for
+from flask import render_template, url_for
 from flask import Flask
+import os
+
 app = Flask(__name__)
-
-# Make the WSGI interface available at the top level so wfastcgi can get it.
-wsgi_app = app.wsgi_app
-
 
 @app.route('/')
 @app.route('/index')
 def hello():
-    """Renders a sample page."""
-    # return "Hello World!"
-    
+    """Renders the home page."""
     return render_template('index.html')
 
 @app.route('/contact')
@@ -27,34 +21,35 @@ def contact():
 
 @app.route('/about')
 def about():
-    """Renders the contact page."""
+    """Renders the about page."""
     return render_template('about.html')
 
 @app.route('/TrendSummarizer')
 def TrendSummarizer():
-    """Renders the contact page."""
+    """Renders the trend summarizer page."""
     return render_template('TrendSummarizer.html')
 
 @app.route('/DataHelp')
 def DataHelp():
-    """Renders the contact page."""
+    """Renders the data help page."""
     return render_template('DataHelp.html')
 
 @app.route('/signin')
 def signin():
-    """Renders the contact page."""
+    """Renders the signin page."""
     return render_template('signin.html')
 
 @app.route('/signup')
 def signup():
-    """Renders the contact page."""
+    """Renders the signup page."""
     return render_template('signup.html')
 
+@app.route('/health')
+def health():
+    """Health check endpoint"""
+    return {'status': 'healthy', 'service': 'Prolexis Analytics'}
+
 if __name__ == '__main__':
-    import os
-    HOST = os.environ.get('SERVER_HOST', 'localhost')
-    try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
-    except ValueError:
-        PORT = 5555
-    app.run(HOST, PORT)
+    # For Heroku deployment
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
