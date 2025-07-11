@@ -1,0 +1,181 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4e5a8320-472b-4cbd-ad95-0c2b26b68031</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebFlaskWebProjectAITrend_ampDataServicesCompany</Name>
+    <RootNamespace>FlaskWebFlaskWebProjectAITrend_ampDataServicesCompany</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="static\assets\css\animate.css" />
+    <Content Include="static\assets\css\tailwind.css" />
+    <Content Include="static\assets\images\about\about-image.svg" />
+    <Content Include="static\assets\images\blog\article-author-01.png" />
+    <Content Include="static\assets\images\blog\article-author-02.png" />
+    <Content Include="static\assets\images\blog\article-author-03.png" />
+    <Content Include="static\assets\images\blog\article-author-04.png" />
+    <Content Include="static\assets\images\blog\author-01.png" />
+    <Content Include="static\assets\images\blog\bannder-ad.png" />
+    <Content Include="static\assets\images\blog\blog-01.jpg" />
+    <Content Include="static\assets\images\blog\blog-02.jpg" />
+    <Content Include="static\assets\images\blog\blog-03.jpg" />
+    <Content Include="static\assets\images\blog\blog-details-01.jpg" />
+    <Content Include="static\assets\images\blog\dotted-shape.svg" />
+    <Content Include="static\assets\images\blog\quote-bg.svg" />
+    <Content Include="static\assets\images\brands\ayroui.svg" />
+    <Content Include="static\assets\images\brands\ecommerce-html.svg" />
+    <Content Include="static\assets\images\brands\graygrids.svg" />
+    <Content Include="static\assets\images\brands\lineicons.svg" />
+    <Content Include="static\assets\images\brands\tailgrids.svg" />
+    <Content Include="static\assets\images\brands\tailwindtemplates.svg" />
+    <Content Include="static\assets\images\brands\uideck.svg" />
+    <Content Include="static\assets\images\favicon1.png" />
+    <Content Include="static\assets\images\footer\brands\ayroui.svg" />
+    <Content Include="static\assets\images\footer\brands\ecommerce-html.svg" />
+    <Content Include="static\assets\images\footer\brands\graygrids.svg" />
+    <Content Include="static\assets\images\footer\brands\lineicons.svg" />
+    <Content Include="static\assets\images\footer\brands\plainadmin.svg" />
+    <Content Include="static\assets\images\footer\brands\tailgrids.svg" />
+    <Content Include="static\assets\images\footer\brands\tailwindtemplates.svg" />
+    <Content Include="static\assets\images\footer\brands\uideck.svg" />
+    <Content Include="static\assets\images\footer\shape-1.svg" />
+    <Content Include="static\assets\images\footer\shape-3.svg" />
+    <Content Include="static\assets\images\favicon.png" />
+    <Content Include="static\assets\images\hero\brand.svg" />
+    <Content Include="static\assets\images\hero\hero-image1.jpg" />
+    <Content Include="static\assets\images\hero\hero-image.png" />
+    <Content Include="static\assets\images\logo\favicon.svg" />
+    <Content Include="static\assets\images\logo\logo-white.jpg" />
+    <Content Include="static\assets\images\logo\logo-white.svg" />
+    <Content Include="static\assets\images\logo\logo.svg" />
+    <Content Include="static\assets\images\team\dotted-shape.svg" />
+    <Content Include="static\assets\images\team\shape-2.svg" />
+    <Content Include="static\assets\images\team\team-01.png" />
+    <Content Include="static\assets\images\team\team-02.png" />
+    <Content Include="static\assets\images\team\team-03.png" />
+    <Content Include="static\assets\images\team\team-04.png" />
+    <Content Include="static\assets\images\testimonials\author-01.png" />
+    <Content Include="static\assets\images\testimonials\author-02.png" />
+    <Content Include="static\assets\images\testimonials\author-03.png" />
+    <Content Include="static\assets\js\main.js" />
+    <Content Include="static\assets\js\wow.min.js" />
+    <Content Include="static\content\bootstrap.css" />
+    <Content Include="static\content\bootstrap.min.css" />
+    <Content Include="static\content\site.css" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\scripts\bootstrap.js" />
+    <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="static\scripts\jquery.validate.js" />
+    <Content Include="static\scripts\jquery.validate.min.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="static\scripts\modernizr-2.6.2.js" />
+    <Content Include="static\scripts\respond.js" />
+    <Content Include="static\scripts\respond.min.js" />
+    <Content Include="static\src\tailwind.css" />
+    <Content Include="templates\about.html" />
+    <Content Include="templates\contact.html" />
+    <Content Include="templates\DataHelp.html" />
+    <Content Include="templates\index.html" />
+    <Content Include="templates\package-lock.json" />
+    <Content Include="templates\package.json" />
+    <Content Include="templates\postcss.config.js" />
+    <Content Include="templates\signin.html" />
+    <Content Include="templates\signup.html" />
+    <Content Include="templates\tailwind.config.js" />
+    <Content Include="templates\TrendSummarizer.html" />
+    <None Include="static\scripts\_references.js" />
+    <None Include="static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="static\scripts\jquery-1.10.2.intellisense.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="templates\" />
+    <Folder Include="static\" />
+    <Folder Include="static\assets\" />
+    <Folder Include="static\assets\css\" />
+    <Folder Include="static\assets\images\" />
+    <Folder Include="static\assets\images\about\" />
+    <Folder Include="static\assets\images\blog\" />
+    <Folder Include="static\assets\images\brands\" />
+    <Folder Include="static\assets\images\footer\" />
+    <Folder Include="static\assets\images\footer\brands\" />
+    <Folder Include="static\assets\images\hero\" />
+    <Folder Include="static\assets\images\logo\" />
+    <Folder Include="static\assets\images\team\" />
+    <Folder Include="static\assets\images\testimonials\" />
+    <Folder Include="static\assets\js\" />
+    <Folder Include="static\content\" />
+    <Folder Include="static\fonts\" />
+    <Folder Include="static\scripts\" />
+    <Folder Include="static\src\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

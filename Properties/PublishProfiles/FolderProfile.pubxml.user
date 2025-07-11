@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\Mohammadpour\test\FlaskWebFlaskWebProjectAITrend_ampDataServicesCompany\FlaskWebFlaskWebProjectAITrend_ampDataServicesCompany\.\app.publish\</_PublishTargetUrl>
+    <History>True|2025-07-06T19:18:28.6034265Z||;True|2025-07-06T22:12:33.5209867+03:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app.py">
+      <publishTime>07/06/2025 22:47:57</publishTime>
+    </File>
+    <File Include="requirements.txt">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/assets/css/animate.css">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/css/tailwind.css">
+      <publishTime>07/06/2025 02:37:55</publishTime>
+    </File>
+    <File Include="static/assets/images/about/about-image.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/article-author-01.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/article-author-02.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/article-author-03.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/article-author-04.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/author-01.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/bannder-ad.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/blog-01.jpg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/blog-02.jpg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/blog-03.jpg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/blog-details-01.jpg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/dotted-shape.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/blog/quote-bg.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/ayroui.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/ecommerce-html.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/graygrids.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/lineicons.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/tailgrids.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/tailwindtemplates.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/brands/uideck.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/favicon.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/ayroui.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/ecommerce-html.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/graygrids.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/lineicons.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/plainadmin.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/tailgrids.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/tailwindtemplates.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/brands/uideck.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/shape-1.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/footer/shape-3.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/hero/brand.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/hero/hero-image.jpg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/logo/favicon.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/logo/logo-white.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/logo/logo.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/team/dotted-shape.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/team/shape-2.svg">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/team/team-01.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/team/team-02.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/team/team-03.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/team/team-04.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/testimonials/author-01.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/testimonials/author-02.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/images/testimonials/author-03.png">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/js/main.js">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/assets/js/wow.min.js">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="static/content/bootstrap.css">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/content/bootstrap.min.css">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/content/site.css">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/bootstrap.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/bootstrap.min.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery-1.10.2.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery-1.10.2.min.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery-1.10.2.min.map">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery.validate.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery.validate.min.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/modernizr-2.6.2.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/respond.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/scripts/respond.min.js">
+      <publishTime>05/17/2025 02:34:10</publishTime>
+    </File>
+    <File Include="static/src/tailwind.css">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="templates/index.html">
+      <publishTime>07/06/2025 17:36:08</publishTime>
+    </File>
+    <File Include="templates/package-lock.json">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="templates/package.json">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="templates/postcss.config.js">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+    <File Include="templates/tailwind.config.js">
+      <publishTime>01/25/2022 10:31:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
