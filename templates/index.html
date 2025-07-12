@@ -6089,5 +6089,28 @@
 
         window.document.addEventListener("scroll", onScroll);
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    
+    faqButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const faqItem = this.parentNode;
+            const content = faqItem.querySelector('.faq-content');
+            const icon = this.querySelector('.icon');
+            
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+            
+            // Rotate arrow icon
+            if (content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+});
+</script>    
 </body>
 </html>
