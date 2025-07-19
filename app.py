@@ -49,6 +49,10 @@ def health():
     """Health check endpoint"""
     return {'status': 'healthy', 'service': 'Prolexis Analytics'}
 
+@app.route('/tools')
+def tools():
+    return render_template('tools.html')
+    
 if __name__ == '__main__':
     # For Heroku deployment
     port = int(os.environ.get('PORT', 5000))
