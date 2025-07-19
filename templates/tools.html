@@ -1,49 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose Your Tool - Prolexis Analytics</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/static/assets/images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/assets/css/lineicons.css" />
+    <link rel="stylesheet" href="/static/assets/css/ud-styles.css" />
 </head>
-<body class="bg-gray-50">
-    <div class="container mx-auto px-4 py-20">
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Analysis Tool</h1>
-            <p class="text-xl text-gray-600">Select the tool that best fits your needs</p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Business Intelligence Tool -->
-            <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-                <div class="text-6xl mb-4">📊</div>
-                <h3 class="text-2xl font-bold mb-4">Business Intelligence Analyzer</h3>
-                <p class="text-gray-600 mb-6">AI-powered business analysis and trend identification from documents, URLs, and text. Extract strategic insights and actionable recommendations.</p>
-                <a href="http://54.159.23.233:8502" 
-                   target="_blank"
-                   class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
-                   Launch Business Intelligence Tool
-                </a>
+
+<body>
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="/">
+                            <img src="/static/assets/images/logo/logo.svg" alt="Logo" />
+                        </a>
+                        <button class="navbar-toggler">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div class="navbar-collapse">
+                            <ul id="nav" class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#pricing">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#team">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                            <a href="javascript:void(0)" class="ud-main-btn ud-login-btn">
+                                Sign In
+                            </a>
+                            <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                                Sign Up
+                            </a>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            
-            <!-- Market Trend Tool -->
-            <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-xl transition">
-                <div class="text-6xl mb-4">📈</div>
-                <h3 class="text-2xl font-bold mb-4">Market Trend Analyzer</h3>
-                <p class="text-gray-600 mb-6">Discover emerging market trends, analyze competitor movements, and identify growth opportunities in your industry.</p>
-                <a href="http://54.159.23.233:8501" 
-                   target="_blank"
-                   class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition inline-block">
-                   Launch Market Trend Tool
-                </a>
+        </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Tools Section Start ====== -->
+    <section class="ud-hero" id="home" style="background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+                        <h1 class="ud-hero-title">
+                            Choose Your Analysis Tool
+                        </h1>
+                        <p class="ud-hero-desc">
+                            Select the AI-powered tool that best fits your business needs
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="text-center mt-12">
-            <a href="/" class="text-blue-600 hover:underline text-lg">← Back to Home</a>
+    </section>
+
+    <!-- ====== Tools Selection Section ====== -->
+    <section id="tools" class="ud-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ud-section-title">
+                        <span>Our Tools</span>
+                        <h2>Advanced AI-Powered Solutions</h2>
+                        <p>
+                            Choose the right tool for your business intelligence and market analysis needs
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Business Intelligence Tool -->
+                <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+                        <div class="ud-feature-icon">
+                            <i class="lni lni-bar-chart"></i>
+                        </div>
+                        <div class="ud-feature-content">
+                            <h3 class="ud-feature-title">Business Intelligence Analyzer</h3>
+                            <p class="ud-feature-desc">
+                                AI-powered business analysis and trend identification from documents, URLs, and text. 
+                                Extract strategic insights and actionable recommendations for your business decisions.
+                            </p>
+                            <a href="http://54.159.23.233:8502" target="_blank" class="ud-feature-link">
+                                Launch Business Intelligence Tool
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Market Trend Tool -->
+                <div class="col-xl-6 col-lg-6 col-sm-6">
+                    <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+                        <div class="ud-feature-icon">
+                            <i class="lni lni-graph"></i>
+                        </div>
+                        <div class="ud-feature-content">
+                            <h3 class="ud-feature-title">Market Trend Analyzer</h3>
+                            <p class="ud-feature-desc">
+                                Discover emerging market trends, analyze competitor movements, and identify growth 
+                                opportunities in your industry with advanced AI-powered market intelligence.
+                            </p>
+                            <a href="http://54.159.23.233:8502" target="_blank" class="ud-feature-link">
+                                Launch Market Trend Tool
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="text-center mt-8">
-            <p class="text-gray-500">Need help choosing? <a href="https://calendly.com/mehdi-abtahi-prolexisanalytics" target="_blank" class="text-blue-600 hover:underline">Book a free consultation</a></p>
+    </section>
+
+    <!-- ====== Back to Home Section ====== -->
+    <section class="ud-contact" style="padding: 60px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ud-contact-content-wrapper">
+                        <div class="ud-contact-content">
+                            <div class="ud-contact-info text-center">
+                                <div class="ud-contact-info-item">
+                                    <h4 class="ud-contact-info-title">Need Help Choosing?</h4>
+                                    <p>
+                                        Book a free consultation to discuss which tool is right for your business
+                                    </p>
+                                    <a href="https://calendly.com/mehdi-abtahi-prolexisanalytics" 
+                                       target="_blank" 
+                                       class="ud-main-btn">
+                                        Book a Free Consultation
+                                    </a>
+                                </div>
+                                <div class="ud-contact-info-item" style="margin-top: 30px;">
+                                    <a href="/" class="ud-back-btn">
+                                        ← Back to Home
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+        <div class="container">
+            <div class="ud-footer-bottom">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="ud-footer-bottom-left">
+                            <li>
+                                <a href="javascript:void(0)">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Support policy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Terms of service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="ud-footer-bottom-right">
+                            Designed and Developed by
+                            <a href="https://prolexisanalytics.com" rel="nofollow">Prolexis Analytics</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/wow.min.js"></script>
+    <script src="/static/assets/js/main.js"></script>
 </body>
 </html>
