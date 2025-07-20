@@ -134,10 +134,25 @@ def payment_success():
         session = stripe.checkout.Session.retrieve(session_id)
         
         if session.payment_status == 'paid':
-            # Payment was successful
+            # Get customer email from the session
+            customer_email = session.customer_details.email if session.customer_details else None
+            
+            # Store payment info (we'll add Firebase later)
+            payment_info = {
+                'email': customer_email,
+                'plan': plan_type,
+                'amount': session.amount_total,
+                'session_id': session_id,
+                'timestamp': datetime.now().isoformat()
+            }
+            
+            # For now, just log it (we'll add Firebase integration next)
+            print(f"Payment successful: {payment_info}")
+            
             return render_template('payment_success.html', 
                                  plan=plan_type, 
-                                 session_id=session_id)
+                                 session_id=session_id,
+                                 email=customer_email)
         else:
             return "Payment not completed", 400
             
