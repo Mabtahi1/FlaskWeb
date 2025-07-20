@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful - Prolexis Analytics</title>
+    <link rel="shortcut icon" href="/static/assets/images/favicon.png" type="/static/image/x-icon" />
+    <link rel="stylesheet" href="/static/assets/css/animate.css" />
+    <link rel="stylesheet" href="/static/assets/css/tailwind.css" />
+    <script src="/static/assets/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</head>
+<body>
+    <section class="pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
+        <div class="container">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4">
+                    <div class="mx-auto max-w-[600px] text-center">
+                        <div class="mb-8">
+                            <div class="mx-auto mb-6 w-20 h-20 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h1 class="mb-4 text-3xl font-bold text-dark sm:text-4xl">
+                                Payment Successful! 🎉
+                            </h1>
+                            <p class="text-lg text-body-color mb-8">
+                                Thank you for subscribing to the <strong>{{ plan|title }} Plan</strong>!
+                                Your account will be upgraded shortly.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-8 p-6 bg-gray-50 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4">What's Next?</h3>
+                            <ol class="text-left text-body-color space-y-2">
+                                <li>1. Go to your analysis tools</li>
+                                <li>2. Log in with your email address</li>
+                                <li>3. Enjoy your upgraded features!</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <a href="/tools" 
+                               class="inline-flex items-center justify-center py-4 px-6 text-center text-base font-medium text-white hover:bg-opacity-90 bg-primary rounded-lg transition duration-300 ease-in-out">
+                                🚀 Go to Your Tools
+                            </a>
+                            <br>
+                            <a href="/" 
+                               class="text-primary hover:underline">
+                                ← Back to Home
+                            </a>
+                        </div>
+                        
+                        <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+                            <p class="text-sm text-body-color">
+                                <strong>Important:</strong> Use the same email address you provided during payment when creating your account in the tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
