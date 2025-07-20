@@ -25,10 +25,9 @@
 
 </head>
 <body>
-    <!-- ====== Navbar Section Start -->
-    <div class="
+   <!-- ====== Navbar Section Start -->
+<div class="
     ud-header
-
     absolute
     top-0
     left-0
@@ -37,19 +36,19 @@
     flex
     items-center
   ">
-        <div class="container">
-            <div class="flex -mx-4 items-center justify-between relative">
-                <div class="px-4 w-60 max-w-full">
-                    <!--<a href="index.html" class="navbar-logo w-full block py-5">
-                        <img src="/static/assets/images/logo/logo-white.svg" id="header-logo"
-                             alt="logo"
-                             class="w-full header-logo" />
-                    </a>-->
-                </div>
-                <div class="flex px-4 justify-between items-center w-full">
-                    <div>
-                        <button id="navbarToggler"
-                                class="
+    <div class="container">
+        <div class="flex -mx-4 items-center justify-between relative">
+            <div class="px-4 w-60 max-w-full">
+                <!--<a href="index.html" class="navbar-logo w-full block py-5">
+                    <img src="/static/assets/images/logo/logo-white.svg" id="header-logo"
+                         alt="logo"
+                         class="w-full header-logo" />
+                </a>-->
+            </div>
+            <div class="flex px-4 justify-center items-center w-full">
+                <div>
+                    <button id="navbarToggler"
+                            class="
               block
               absolute
               right-4
@@ -62,12 +61,12 @@
               py-[6px]
               rounded-lg
             ">
-                            <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
-                            <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
-                            <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
-                        </button>
-                        <nav id="navbarCollapse"
-                             class="
+                        <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
+                        <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
+                        <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
+                    </button>
+                    <nav id="navbarCollapse"
+                         class="
               absolute
               py-5
               lg:py-0 lg:px-4
@@ -84,61 +83,30 @@
               hidden
               lg:block lg:static lg:shadow-none
             ">
-                            <ul class="blcok lg:flex">
-                                <li class="relative group">
-                                    <a href="#home"
-                                       class="
+                        <ul class="block lg:flex lg:justify-center lg:items-center">
+                            <li>
+                                <a href="#home"
+                                   class="
                     ud-menu-scroll
                     text-base text-dark
                     lg:text-white
-                    lg:group-hover:opacity-70
-                    lg:group-hover:text-white
-                    group-hover:text-primary
+                    hover:text-primary
                     py-2
                     lg:py-6 lg:inline-flex lg:px-0
                     flex
                     mx-8
                     lg:mr-0
                   ">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="relative group">
-                                    <a href="#about"
-                                       class="
-                    ud-menu-scroll
-                    
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       
-                                       text-dark
-                    lg:text-white
-                    lg:group-hover:opacity-70
-                    lg:group-hover:text-white
-                    group-hover:text-primary
-                    py-2
-                    lg:py-6 lg:inline-flex lg:px-0
-                    flex
-                    mx-8
-                    lg:mr-0 lg:ml-7
-                    xl:ml-12
-                  ">
-                                        About
-                                    </a>
-                                </li>
-                                <li class="relative group">
-                                    <a href="#pricing"
-                                       class="
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                   class="
                     ud-menu-scroll
                     text-base text-dark
                     lg:text-white
-                    lg:group-hover:opacity-70
-                    lg:group-hover:text-white
-                    group-hover:text-primary
+                    hover:text-primary
                     py-2
                     lg:py-6 lg:inline-flex lg:px-0
                     flex
@@ -146,18 +114,16 @@
                     lg:mr-0 lg:ml-7
                     xl:ml-12
                   ">
-                                        Pricing
-                                    </a>
-                                
-                                <li class="relative group">
-                                    <a href="#contact"
-                                       class="
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pricing"
+                                   class="
                     ud-menu-scroll
                     text-base text-dark
                     lg:text-white
-                    lg:group-hover:opacity-70
-                    lg:group-hover:text-white
-                    group-hover:text-primary
+                    hover:text-primary
                     py-2
                     lg:py-6 lg:inline-flex lg:px-0
                     flex
@@ -165,107 +131,34 @@
                     lg:mr-0 lg:ml-7
                     xl:ml-12
                   ">
-                                        Contact
-                                    
-                                    <div class="
-                    submenu
-                    hidden
-                    relative
-                    lg:absolute
-                    w-[250px]
-                    top-full
-                    lg:top-[110%]
-                    left-0
-                    rounded-sm
-                    lg:shadow-lg
-                    p-4
-                    lg:block lg:opacity-0 lg:invisible
-                    group-hover:opacity-100
-                    lg:group-hover:visible lg:group-hover:top-full
-                    bg-white
-                    transition-[top]
-                    duration-300
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('contact') }}"
+                                   class="
+                    ud-menu-scroll
+                    text-base text-dark
+                    lg:text-white
+                    hover:text-primary
+                    py-2
+                    lg:py-6 lg:inline-flex lg:px-0
+                    flex
+                    mx-8
+                    lg:mr-0 lg:ml-7
+                    xl:ml-12
                   ">
-                                        <a href={{ url_for('about') }}
-                                           class="
-                      block
-                      text-sm text-body-color
-                      rounded
-                      hover:text-primary
-                      py-[10px]
-                      px-4
-                    ">
-                                            About Us
-                                        </a>
-                                        <!--<a href={{ url_for('TrendSummarizer') }}
-                                           class="
-                      block
-                      text-sm text-body-color
-                      rounded
-                      hover:text-primary
-                      py-[10px]
-                      px-4
-                    ">
-                                            Market Trend Summarizer
-                                        </a>-->
-                                        <a href={{ url_for('contact') }}
-                                           class="
-                      block
-                      text-sm text-body-color
-                      rounded
-                      hover:text-primary
-                      py-[10px]
-                      px-4
-                    ">
-                                            Contact Us
-                                        </a>
-                                        <!--<a href="/templates/contact.html"-->
-                                        <!--<a href={{ url_for('DataHelp') }}
-                                           class="
-                      block
-                      text-sm text-body-color
-                      rounded
-                      hover:text-primary
-                      py-[10px]
-                      px-4
-                    ">
-                                            Smart Data Services
-                                        </a>
-                                        <a href="DataHelp.html"
-                                           class="
-                      block
-                      text-sm text-body-color
-                      rounded
-                      hover:text-primary
-                      py-[10px]
-                      px-4
-                    ">
-                                            Blog Details Page
-                                       
-                                        <!--<a href="404.html"
-                                           class="
-                      block
-                      text-sm text-body-color
-                      rounded
-                      hover:text-primary
-                      py-[10px]
-                      px-4
-                    ">
-                                            404 Page
-                                        </a>-->
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="sm:flex justify-end hidden pr-16 lg:pr-0">
-                        
-                    </div>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ====== Navbar Section End -->
+</div>
+<!-- ====== Navbar Section End -->
     <!-- ====== Hero Section Start -->
     <div id="home"
          style="background-color:hsla(315,61%,5%,1);background-image:radial-gradient(at 0% 66%, hsla(276,56%,4%,1) 0px, transparent 50%), radial-gradient(at 21% 16%, hsla(276,56%,4%,1) 0px, transparent 50%), radial-gradient(at 45% 28%, hsla(249,87%,40%,1) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(250,87%,40%,1) 0px, transparent 50%), radial-gradient(at 100% 100%, hsla(251,88%,40%,1) 0px, transparent 50%), radial-gradient(at 46% 73%, hsla(307,57%,70%,1) 0px, transparent 50%), radial-gradient(at 97% 1%, hsla(307,57%,70%,1) 0px, transparent 50%);position:relative;margin-top:calc(-8rem * var(--mantine-scale))" class="__m__-Rpuutb">
