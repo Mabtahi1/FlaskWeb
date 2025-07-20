@@ -37,108 +37,51 @@
     items-center
   ">
     <div class="container">
-        <div class="flex -mx-4 items-center justify-center relative">
-            <div class="flex justify-center items-center w-full">
-                <div>
-                    <button id="navbarToggler"
-                            class="
-              block
-              absolute
-              right-4
-              top-1/2
-              -translate-y-1/2
-              lg:hidden
-              focus:ring-2
-              ring-primary
-              px-3
-              py-[6px]
-              rounded-lg
-            ">
-                        <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
-                        <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
-                        <span class="relative w-[30px] h-[2px] my-[6px] block bg-white"></span>
-                    </button>
-                    <nav id="navbarCollapse"
-                         class="
-              absolute
-              py-5
-              lg:py-0 lg:px-4
-              xl:px-6
-              bg-white
-              lg:bg-transparent
-              shadow-lg
-              rounded-lg
-              max-w-[250px]
-              w-full
-              lg:max-w-full lg:w-full
-              right-4
-              top-full
-              hidden
-              lg:block lg:static lg:shadow-none
-            ">
-                        <ul class="block lg:flex lg:justify-center lg:items-center">
-                            <li class="lg:mx-6">
-                                <a href="#home"
-                                   class="
-                    ud-menu-scroll
-                    text-lg text-dark
-                    lg:text-white
-                    hover:text-primary
-                    py-2
-                    lg:py-6 lg:inline-flex
-                    flex
-                    font-medium
-                  ">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="lg:mx-6">
-                                <a href="#about"
-                                   class="
-                    ud-menu-scroll
-                    text-lg text-dark
-                    lg:text-white
-                    hover:text-primary
-                    py-2
-                    lg:py-6 lg:inline-flex
-                    flex
-                    font-medium
-                  ">
-                                    About
-                                </a>
-                            </li>
-                            <li class="lg:mx-6">
-                                <a href="#pricing"
-                                   class="
-                    ud-menu-scroll
-                    text-lg text-dark
-                    lg:text-white
-                    hover:text-primary
-                    py-2
-                    lg:py-6 lg:inline-flex
-                    flex
-                    font-medium
-                  ">
-                                    Pricing
-                                </a>
-                            </li>
-                            <li class="lg:mx-6">
-                                <a href="{{ url_for('contact') }}"
-                                   class="
-                    ud-menu-scroll
-                    text-lg text-dark
-                    lg:text-white
-                    hover:text-primary
-                    py-2
-                    lg:py-6 lg:inline-flex
-                    flex
-                    font-medium
-                  ">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+        <div class="flex items-center justify-center w-full">
+            <nav class="hidden lg:block">
+                <ul class="flex items-center space-x-12">
+                    <li>
+                        <a href="#home"
+                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pricing"
+                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('contact') }}"
+                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile menu button -->
+            <button id="navbarToggler"
+                    class="lg:hidden fixed right-4 top-4 z-50 p-2 text-white">
+                <span class="block w-6 h-0.5 bg-white mb-1"></span>
+                <span class="block w-6 h-0.5 bg-white mb-1"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+            
+            <!-- Mobile menu -->
+            <div id="navbarCollapse" class="hidden lg:hidden fixed inset-0 bg-black bg-opacity-90 z-40">
+                <div class="flex flex-col items-center justify-center h-full space-y-8">
+                    <a href="#home" class="text-xl font-medium text-white hover:text-primary">Home</a>
+                    <a href="#about" class="text-xl font-medium text-white hover:text-primary">About</a>
+                    <a href="#pricing" class="text-xl font-medium text-white hover:text-primary">Pricing</a>
+                    <a href="{{ url_for('contact') }}" class="text-xl font-medium text-white hover:text-primary">Contact</a>
                 </div>
             </div>
         </div>
