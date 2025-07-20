@@ -11,8 +11,9 @@ import pyrebase
 app = Flask(__name__)
 
 # Stripe configuration (replace with your actual keys)
-stripe.api_key = "sk_test_YOUR_STRIPE_SECRET_KEY"  # Replace with your secret key
-STRIPE_PUBLISHABLE_KEY = "pk_test_YOUR_STRIPE_PUBLISHABLE_KEY"  # Replace with your publishable key
+# Instead of hardcoded keys:
+stripe.api_key = os.environ.get('STRIPE_SECRET_KEY')
+STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLISHABLE_KEY')
 
 # Firebase configuration (same as your Streamlit)
 firebase_config = {
