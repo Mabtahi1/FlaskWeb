@@ -81,40 +81,18 @@ def tools():
 def payment(plan_type):
     """Handle payment for different plans"""
     
-    # Define plan details
     plans = {
-        'basic': {
-            'price': 1000,  # $10.00 in cents
-            'name': 'Basic Plan',
-            'description': '5 summaries/month'
-        },
-        'pro': {
-            'price': 4900,  # $49.00 in cents
-            'name': 'Pro Plan', 
-            'description': 'Unlimited summaries + competitor tracking'
-        },
-        'onetime': {
-            'price': 2500,  # $25.00 in cents
-            'name': 'One-time Plan',
-            'description': 'PDF from up to 3 sources'
-        },
-        'starter': {
-            'price': 49900,  # $499.00 in cents
-            'name': 'Starter Plan',
-            'description': 'Dashboard + Data cleanup'
-        },
-        'premium': {
-            'price': 99900,  # $999.00 in cents
-            'name': 'Premium Plan',
-            'description': 'Automation + Forecasting + $100/mo'
-        }
+        'basic': {'price': 1000, 'name': 'Basic Plan', 'description': '5 summaries/month'},
+        'pro': {'price': 4900, 'name': 'Pro Plan', 'description': 'Unlimited summaries + competitor tracking'},
+        'onetime': {'price': 2500, 'name': 'One-time Plan', 'description': 'PDF from up to 3 sources'},
+        'starter': {'price': 49900, 'name': 'Starter Plan', 'description': 'Dashboard + Data cleanup'},
+        'premium': {'price': 99900, 'name': 'Premium Plan', 'description': 'Automation + Forecasting + $100/mo'}
     }
     
     if plan_type not in plans:
         return "Invalid plan", 400
     
     try:
-        # Create Stripe checkout session
         session = stripe.checkout.Session.create(
             payment_method_types=['card'],
             line_items=[{
@@ -133,7 +111,10 @@ def payment(plan_type):
             cancel_url='https://prolexisanalytics.com/',
             metadata={
                 'plan_type': plan_type
-            }
+            },
+            # Add this to collect customer email
+            customer_email=request.args.get('email'),  # We'll pass this from the frontend
+            billing_address_collection='required'
         )
         return redirect(session.url)
     except Exception as e:
