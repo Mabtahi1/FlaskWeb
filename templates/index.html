@@ -37,15 +37,8 @@
     items-center
   ">
     <div class="container">
-        <div class="flex -mx-4 items-center justify-between relative">
-            <div class="px-4 w-60 max-w-full">
-                <!--<a href="index.html" class="navbar-logo w-full block py-5">
-                    <img src="/static/assets/images/logo/logo-white.svg" id="header-logo"
-                         alt="logo"
-                         class="w-full header-logo" />
-                </a>-->
-            </div>
-            <div class="flex px-4 justify-center items-center w-full">
+        <div class="flex -mx-4 items-center justify-center relative">
+            <div class="flex justify-center items-center w-full">
                 <div>
                     <button id="navbarToggler"
                             class="
@@ -83,19 +76,18 @@
               hidden
               lg:block lg:static lg:shadow-none
             ">
-                        <ul class="block lg:flex lg:justify-center lg:items-center">
+                        <ul class="block lg:flex lg:justify-center lg:items-center lg:space-x-8">
                             <li>
                                 <a href="#home"
                                    class="
                     ud-menu-scroll
-                    text-base text-dark
+                    text-lg text-dark
                     lg:text-white
                     hover:text-primary
                     py-2
-                    lg:py-6 lg:inline-flex lg:px-0
+                    lg:py-6 lg:inline-flex
                     flex
-                    mx-8
-                    lg:mr-0
+                    font-medium
                   ">
                                     Home
                                 </a>
@@ -104,15 +96,13 @@
                                 <a href="#about"
                                    class="
                     ud-menu-scroll
-                    text-base text-dark
+                    text-lg text-dark
                     lg:text-white
                     hover:text-primary
                     py-2
-                    lg:py-6 lg:inline-flex lg:px-0
+                    lg:py-6 lg:inline-flex
                     flex
-                    mx-8
-                    lg:mr-0 lg:ml-7
-                    xl:ml-12
+                    font-medium
                   ">
                                     About
                                 </a>
@@ -121,15 +111,13 @@
                                 <a href="#pricing"
                                    class="
                     ud-menu-scroll
-                    text-base text-dark
+                    text-lg text-dark
                     lg:text-white
                     hover:text-primary
                     py-2
-                    lg:py-6 lg:inline-flex lg:px-0
+                    lg:py-6 lg:inline-flex
                     flex
-                    mx-8
-                    lg:mr-0 lg:ml-7
-                    xl:ml-12
+                    font-medium
                   ">
                                     Pricing
                                 </a>
@@ -138,15 +126,13 @@
                                 <a href="{{ url_for('contact') }}"
                                    class="
                     ud-menu-scroll
-                    text-base text-dark
+                    text-lg text-dark
                     lg:text-white
                     hover:text-primary
                     py-2
-                    lg:py-6 lg:inline-flex lg:px-0
+                    lg:py-6 lg:inline-flex
                     flex
-                    mx-8
-                    lg:mr-0 lg:ml-7
-                    xl:ml-12
+                    font-medium
                   ">
                                     Contact
                                 </a>
