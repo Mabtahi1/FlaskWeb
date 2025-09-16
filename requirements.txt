@@ -8,7 +8,8 @@ python-dotenv==1.0.0
 firebase-admin==6.1.0
 pycryptodome==3.19.0
 python-jwt==4.1.0
-gcloud==0.17.0
+gcloud>=0.18.3
 oauth2client==4.1.3
+
 
 
