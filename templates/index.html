@@ -25,42 +25,29 @@
 
 </head>
 <body>
-   <!-- ====== Navbar Section Start -->
-<div class="
-    ud-header
-    absolute
-    top-0
-    left-0
-    z-40
-    w-full
-    flex
-    items-center
-  ">
+<!-- ====== Navbar Section Start -->
+<div class="ud-header absolute top-0 left-0 z-40 w-full flex items-center">
     <div class="container">
         <div class="flex items-center justify-center w-full">
             <nav class="hidden lg:block">
-                <ul class="flex items-center space-x-32">
-                    <li>
-                        <a href="#home"
-                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                <ul class="flex">
+                    <li class="relative group">
+                        <a href="#home" class="text-base text-white hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 mx-8 lg:mr-0">
                             Home
                         </a>
                     </li>
-                    <li>
-                        <a href="#about"
-                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                    <li class="relative group">
+                        <a href="#about" class="text-base text-white hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 mx-8 lg:mr-0 lg:ml-12">
                             About
                         </a>
                     </li>
-                    <li>
-                        <a href="#pricing"
-                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                    <li class="relative group">
+                        <a href="#pricing" class="text-base text-white hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 mx-8 lg:mr-0 lg:ml-12">
                             Pricing
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ url_for('contact') }}"
-                           class="text-lg font-medium text-white hover:text-primary transition duration-300">
+                    <li class="relative group">
+                        <a href="{{ url_for('contact') }}" class="text-base text-white hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 mx-8 lg:mr-0 lg:ml-12">
                             Contact
                         </a>
                     </li>
@@ -68,8 +55,7 @@
             </nav>
             
             <!-- Mobile menu button -->
-            <button id="navbarToggler"
-                    class="lg:hidden fixed right-4 top-4 z-50 p-2 text-white">
+            <button id="navbarToggler" class="lg:hidden fixed right-4 top-4 z-50 p-2 text-white">
                 <span class="block w-6 h-0.5 bg-white mb-1"></span>
                 <span class="block w-6 h-0.5 bg-white mb-1"></span>
                 <span class="block w-6 h-0.5 bg-white"></span>
@@ -4123,5 +4109,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>    
 </body>
 </html>
+
 
 
