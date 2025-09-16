@@ -27,8 +27,12 @@ firebase_config = {
     "measurementId": "G-HHY482GQKZ"
 }
 
-firebase = pyrebase.initialize_app(firebase_config)
-db = firebase.database()
+try:
+    firebase = pyrebase.initialize_app(firebase_config)
+    db = firebase.database()
+except Exception as e:
+    print(f"Firebase error: {e}")
+    db = None
 
 # Your existing routes
 @app.route('/')
@@ -237,3 +241,4 @@ if __name__ == '__main__':
     # For Heroku deployment
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
+
