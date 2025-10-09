@@ -90,7 +90,9 @@ def health():
 @app.route('/tools')
 def tools():
     return render_template('tools.html')
-
+@app.route('/app')
+def legal_app():
+    return render_template('legal_app.html')  # or whatever template name you're using
 # NEW: Payment routes
 @app.route('/payment/<plan_type>')
 def payment(plan_type):
@@ -252,6 +254,7 @@ if __name__ == '__main__':
     # For Heroku deployment
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
+
 
 
 
